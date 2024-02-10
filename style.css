@@ -1,0 +1,74 @@
+.content{
+    display: flex;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+}
+#console{
+    width: 80px;
+    height: 32px;
+    margin-left: 8px;
+    border: solid 1px black;
+    border-radius: 4px;
+    text-align: center;
+}
+.inp{
+    display: flex;
+}
+
+
+#inpCal{
+    border: solid 1px black;
+    border-radius: 4px;
+    height: 30px;
+    width: 306px;
+    text-align: center;
+}
+
+.buttons1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 38px;
+    width: 306px;
+    grid-gap: 4px;
+    margin-bottom: 4px;
+}
+.buttons2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 38px;
+    width: 306px;
+    grid-gap: 4px;
+    margin-bottom: 4px;
+}
+.buttons3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 38px;
+    width: 306px;
+    grid-gap: 4px;
+    margin-bottom: 4px;
+}
+.buttons4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 38px;
+    width: 306px;
+    grid-gap: 4px;
+}
+.buttons0{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 38px;
+    width: 306px;
+    grid-gap: 4px;
+}
+.scobki{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+}
