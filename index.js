@@ -84,13 +84,12 @@ function twoZero(){
 
 
 function result(){
-    let a = document.getElementById('inpCal').value;
-    let b = document.getElementById('console');
+    let a = document.getElementById('inpCal').value;
     let ch = /\d/;
     if(a.match(ch) == null){
         alert('Введите пожалуйста число');
     }else{
-        b.textContent = eval(a).toFixed(1);
+        a.value = eval(a).toFixed(1);
     }   
 }
 
