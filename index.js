@@ -1,8 +1,6 @@
 function delet(){
-    let a = document.getElementById('inpCal');
-    let b = document.getElementById('console');
-    a.value = ''
-    b.textContent = ''
+    let a = document.getElementById('inpCal');
+    a.value = ''
 }
 function prosent(){
     let a = document.getElementById('inpCal');
@@ -89,7 +87,7 @@ function result(){
     if(a.match(ch) == null){
         alert('Введите пожалуйста число');
     }else{
-        a.value = eval(a).toFixed(1);
+        a = eval(a).toFixed(1);
     }   
 }
 
