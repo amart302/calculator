@@ -1,6 +1,8 @@
 function delet(){
-    let a = document.getElementById('inpCal');
-    a.value = ''
+    let a = document.getElementById('inpCal');
+    let b = document.getElementById('console');
+    a.value = ''
+    b.textContent = ''
 }
 function prosent(){
     let a = document.getElementById('inpCal');
@@ -82,12 +84,13 @@ function twoZero(){
 
 
 function result(){
-    let a = document.getElementById('inpCal').value;
+    let a = document.getElementById('inpCal').value;
+    let b = document.getElementById('console');
     let ch = /\d/;
     if(a.match(ch) == null){
         alert('Введите пожалуйста число');
     }else{
-        a = eval(a).toFixed(1);
+        b.textContent = eval(a).toFixed(1);
     }   
 }
 
