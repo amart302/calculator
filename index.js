@@ -1,8 +1,7 @@
 const inpCal = document.getElementById('inpCal');
-let consol = document.getElementById('consol');
+const consol = document.getElementById('consol');
 
 inpCal.addEventListener('input', () => {
-    // const check = /[^0-9\+\-\%\/\(\)]/;
     inpCal.value = inpCal.value.replace(/[^0-9\+\-\%\/\(\)]/, '')
 })
 function delet(){
