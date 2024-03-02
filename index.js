@@ -70,10 +70,17 @@ function twoZero(){
 
 
 function result(){
-    if(inpCal.value == '')
+    const check = inpCal.value[inpCal.value.length - 1];
+    if(inpCal.value == ''){
         alert('Введите пожалуйсто число');
-    else
+    }
+    else if(check == '+' || check == '-' || check == '/' || check == '*' || check == '('){
+        inpCal.value = inpCal.value.slice(0, inpCal.value.length - 1);
         consol.textContent = eval(inpCal.value).toFixed(1);
+    }
+    else{
+        consol.textContent = eval(inpCal.value).toFixed(1);
+    }
 }
 
 
