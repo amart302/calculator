@@ -1,7 +1,8 @@
 const inpCal = document.getElementById('inpCal');
-const consol = document.getElementById('consol');
+let consol = document.getElementById('consol');
 
 inpCal.addEventListener('input', () => {
+    // const check = /[^0-9\+\-\%\/\(\)]/;
     inpCal.value = inpCal.value.replace(/[^0-9\+\-\%\/\(\)]/, '')
 })
 function delet(){
@@ -69,13 +70,10 @@ function twoZero(){
 
 
 function result(){
-    const checkConsol = /[^\/\%\+\-]/ 
     if(inpCal.value == '')
         alert('Введите пожалуйсто число');
-    else if(checkConsol.test(inpCal.value))
-        alert('Введите пожалуйста выражение правильно')
     else
-        consol.textContent = eval(a).toFixed(1);
+        consol.textContent = eval(inpCal.value).toFixed(1);
 }
 
 
