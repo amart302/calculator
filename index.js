@@ -2,10 +2,6 @@ const inpCal = document.getElementById('inpCal');
 const consol = document.getElementById('consol');
 
 inpCal.addEventListener('input', () => {
-    const check = inpCal.value[inpCal.value.length - 1];
-    if(check == '+' || check == '-' || check == '/' || check == '*' || check == '('){
-        inpCal.value = inpCal.value.replace(/\//, '');
-    }
     inpCal.value = inpCal.value.replace(/[^0-9\+\-\%\/\(\)]/, '')
 })
 function delet(){
