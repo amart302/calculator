@@ -76,7 +76,7 @@ function result(){
     }
     else if(check == '+' || check == '-' || check == '/' || check == '*' || check == '('){
         inpCal.value = inpCal.value.slice(0, inpCal.value.length - 1);
-        consol.textContent = eval(inpCal.value).toFixed(1);
+        consol.innerHTML = eval(inpCal.value).toFixed(1);
     }
     else{
         consol.textContent = eval(inpCal.value).toFixed(1);
