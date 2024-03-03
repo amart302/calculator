@@ -2,9 +2,9 @@ const inpCal = document.getElementById('inpCal');
 const consol = document.getElementById('consol');
 
 inpCal.addEventListener('input', () => {
-    inpCal.value = inpCal.value.replace(/[^0-9\+\-\%\/\(\)]/, '')
+    inpCal.value = inpCal.value.replace(/[^0-9\+\-\%\/\(\)]/, '');
 })
-function delet(){
+function deletAll(){
     inpCal.value = ''
     consol.textContent = ''
 }
@@ -66,7 +66,9 @@ function zero(){
 function twoZero(){
     inpCal.value += '00';
 }
-
+function deleteLastElem(){
+    inpCal.value = inpCal.value.slice(0, inpCal.value.length - 1);
+}
 
 function result(){
     const check = inpCal.value[inpCal.value.length - 1];
@@ -81,6 +83,5 @@ function result(){
         consol.textContent = eval(inpCal.value).toFixed(1);
     }
 }
-
 
 
