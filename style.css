@@ -1,9 +1,7 @@
 @media screen {
     .content{
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        width: 624px;
+        width: 846px;
     }
     .calculator{
         display: flex;
@@ -11,17 +9,16 @@
         width: 500px;
     }
     #consol{
-        width: 150px;
         height: 16px;
         padding: 28px; 
-        margin-left: 6px;
         border: solid 1px black;
         border-radius: 4px;
         text-align: center;
     }
     .inp{
-        display: flex;
-        width: 500px;
+        display: grid;
+        grid-template-columns: 640px 200px;
+        gap: 6px;
     }
     
     
@@ -29,7 +26,6 @@
         border: solid 1px black;
         border-radius: 4px;
         height: 70px;
-        width: 494px;
         text-align: center;
     }
     
@@ -37,7 +33,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 80px;
-        width: 500px;
+        width: 640px;
         grid-gap: 4px;
         margin-bottom: 4px;
     }
@@ -45,7 +41,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 80px;
-        width: 500px;
+        width: 640px;
         grid-gap: 4px;
         margin-bottom: 4px;
     }
@@ -53,7 +49,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 80px;
-        width: 500px;
+        width: 640px;
         grid-gap: 4px;
         margin-bottom: 4px;
     }
@@ -61,7 +57,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 80px;
-        width: 500px;
+        width: 640px;
         grid-gap: 4px;
     }
     .buttons0{
@@ -70,7 +66,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 80px;
-        width: 500px;
+        width: 640px;
         grid-gap: 4px;
     }
     .scobki{
@@ -88,35 +84,31 @@
 @media (max-width: 1279px) {
     .content{
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        width: 624px;
+        width: 384px;
     }
     .calculator{
         display: flex;
         flex-direction: column;
-        width: 422px;
+        width: 500px;
     }
     #consol{
-        width: 100px;
-        height: 18px;
-        padding: 21px;
-        margin-left: 6px;
+        height: 16px;
+        padding: 22px; 
         border: solid 1px black;
         border-radius: 4px;
         text-align: center;
     }
     .inp{
-        display: flex;
-        width: 500px;
+        display: grid;
+        grid-template-columns: 380px;
+        gap: 6px;
     }
     
     
     #inpCal{
         border: solid 1px black;
         border-radius: 4px;
-        height: 58px;
-        width: 416px;
+        height: 64px;
         text-align: center;
     }
     
@@ -124,7 +116,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 50px;
-        width: 420px;
+        width: 380px;
         grid-gap: 4px;
         margin-bottom: 4px;
     }
@@ -132,7 +124,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 50px;
-        width: 420px;
+        width: 380px;
         grid-gap: 4px;
         margin-bottom: 4px;
     }
@@ -140,7 +132,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 50px;
-        width: 420px;
+        width: 380px;
         grid-gap: 4px;
         margin-bottom: 4px;
     }
@@ -148,7 +140,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 50px;
-        width: 420px;
+        width: 380px;
         grid-gap: 4px;
     }
     .buttons0{
@@ -157,7 +149,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         height: 50px;
-        width: 420px;
+        width: 380px;
         grid-gap: 4px;
     }
     .scobki{
