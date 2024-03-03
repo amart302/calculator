@@ -85,7 +85,6 @@
     .content{
         display: flex;
         width: 374px;
-        background-color: aqua;
     }
     .calculator{
         display: flex;
